@@ -1,0 +1,19 @@
+server:
+  port: 1221
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/northandsouth
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1028lrjj
+springdoc:
+  api-docs:
+    #是否开启文档功能
+    enabled: true
+    #swagger后端请求地址
+    path: /api-docs
+  swagger-ui:
+    #自定义swagger前端请求路径，输入http：127.0.0.1:8080/test会自动重定向到swagger页面
+    path: /swagger
